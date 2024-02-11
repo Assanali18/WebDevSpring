@@ -29,9 +29,10 @@ body{
 footer{
     padding: 0 16px;
     margin-top: 30px;
-    padding-bottom:  52px;
+    margin-bottom:  52px;
 }
 .footer_contents{
+    
     display: flex;
     align-items: center;
     justify-content: center;
