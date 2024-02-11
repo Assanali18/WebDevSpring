@@ -1,16 +1,19 @@
-let calculator = {
-    read(){
+function Calculator(){
+
+    this.read = function(){
         this.a = +prompt("Enter a");
         this.b = +prompt("Enter b");
-    },
-    sum(){
+    };
+    this.sum = function(){
         return this.a + this.b;
-    },
-    mul(){
+    };
+    this.mul = function(){
         return this.a * this.b;
-    }
-};
+    };
+}
+let calculator = new Calculator();
 
 calculator.read();
 alert(calculator.sum());
 alert(calculator.mul());
+    
