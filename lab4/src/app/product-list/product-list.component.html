@@ -3,27 +3,34 @@
 <div *ngFor="let product of products">
 
     <div class="product_wrapper">
+
         <div class="product_img">
             <img [src]="product.img" alt="product">
         </div>
+
         <div class="product_content">
+
             <h3 class="product_content-title">
                 <a [title]="product.name + ' details'" [href]="product.link" target="_blank">
                   {{ product.name }}
                 </a>
             </h3>
+
             <p *ngIf="product.description">
                 Описание: {{ product.description }}
             </p>
+
             <div class = "product_rating">
                 <img [src]="product.rating" alt="rating">
             </div>
+
             <div class="product_content-wrap">
                 <p class="product_content-price">{{ product.price }} ₸</p>
                 <button type="button" (click)="shareViaTelegram(product)">
                     Поделиться
                 </button>
             </div>
+            
         </div>
     </div>
 
