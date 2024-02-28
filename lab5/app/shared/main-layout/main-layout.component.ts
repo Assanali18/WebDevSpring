@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from '../product.service';
 import { CartPageComponent } from '../../cart-page/cart-page.component';
+import { log } from 'node:console';
 
 @Component({
   selector: 'app-main-layout',

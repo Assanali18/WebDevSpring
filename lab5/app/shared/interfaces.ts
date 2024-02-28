@@ -11,5 +11,5 @@ export interface Product{
     price: string; 
     date: Date;
     link: string;
-    like: any,
+    like: number,
 }

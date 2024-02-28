@@ -38,6 +38,7 @@ export class AddPageComponent {
       price: this.form.value.price,
       date: new Date(),
       link: this.form.value.link, 
+      like: 0,
     }
 
     this.productServe.create(product).subscribe(res => {
