@@ -1,12 +1,17 @@
 @import '../../quill.snow.css';
-.product_title{
-    margin-bottom: 5px;
-}
+
 .product_wrapper{
     display: flex;
     align-items: center;
     padding: 20px 40px;
     border-bottom: 1px solid #e5e5e5;
+}
+
+.product_info{
+    width: 695px;
+    .product_title{
+        margin-bottom: 5px;
+    }
 }
 
 .product_img{
@@ -20,12 +25,14 @@
     align-items: center;
 }
 
-.product_info{
-    width: 695px;
+.product_content{
+    display: flex;
+    justify-content: space-between;
+    .product_description{
+        width: 470px;
+    }
 }
-.product_description{
-    width: 470px;
-}
+
 
 .product_interface{
     padding-top: 12px;
@@ -33,42 +40,47 @@
     align-items: center;
     justify-content: space-between;
     gap: 100px;
-}
-
-.product_interface p{
-    color: #000;
-    font-weight: 700;
-    font-size: 1rem;
-    text-wrap: nowrap;
+    p{
+        color: #000;
+        font-weight: 700;
+        font-size: 1rem;
+        text-wrap: nowrap;
+    }
+    .product_rating{
+        width: 100px;
+        img{
+            width: 100%;
+        }
+    }
 }
 
 .buttons{
     display: flex;
+
+    .btn-share{
+        padding-right: 50px;
+    }
 }
 
-.btn-share{
-    padding-right: 50px;
-}
 
-.product_rating{
-    width: 100px;
-}
-.product_rating img{
-    width: 100%;
-}
-
-.trans-like{
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-}
-.red-like{
-    cursor: pointer;
-    width: 23px;
-    height: 23px;
-}
-
-.product_content{
+.product_likes{
     display: flex;
-    justify-content: space-between;
+    .trans-like{
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+    }
+    .red-like{
+        cursor: pointer;
+        width: 23px;
+        height: 23px;
+    }
+    span{
+        font-size: 14px;
+        padding-top: 7px;
+    }
 }
+
+
+
+

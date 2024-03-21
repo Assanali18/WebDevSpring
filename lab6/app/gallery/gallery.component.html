@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="container" *ngIf="product$ | async as product" >
     
     <div class="header right">
@@ -15,3 +16,22 @@
     </ng-template>
 </div>
 
+=======
+<div class="container" *ngIf="product$ | async as product" >
+    
+    <div class="header right">
+        <button [routerLink]="['/product', product.id]" class="btn btn-dark">Back</button>
+    </div>
+    
+    <h2>{{  product.title }}</h2>
+    <swiper-container [config]="{ pagination: { clickable: true }, loop: true }" class = "gallery-image" *ngIf="imageUrls$ | async as imageUrls; else loading">
+        <swiper-slide *ngFor="let imageUrl of imageUrls$ | async" class = "slider">
+            <img [src]="imageUrl" alt="Gallery image">
+        </swiper-slide>
+    </swiper-container>
+    <ng-template #loading>
+        <p class="text-center">Loading...</p>
+    </ng-template>
+</div>
+
+>>>>>>> 78668f55cf726fc0e7ee6bf74a94e0409fbd2f82

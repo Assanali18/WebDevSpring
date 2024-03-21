@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <form [formGroup] = "form" (ngSubmit)="submit()">
     <h2>Login as administrator</h2>
 
@@ -13,3 +14,20 @@
 
     <button type = "submit" class = "btn btn-block">Login</button>
 </form>
+=======
+<form [formGroup] = "form" (ngSubmit)="submit()">
+    <h2>Login as administrator</h2>
+
+    <div class = "form-control">
+        <label for = "email">Email</label>
+        <input id = "email" type = "email"  formControlName = "email">
+    </div>
+
+    <div class = "form-control">
+        <label for = "password">Password</label>
+        <input id = "password" type = "password" formControlName = "password">
+    </div>
+
+    <button type = "submit" class = "btn btn-block">Login</button>
+</form>
+>>>>>>> 78668f55cf726fc0e7ee6bf74a94e0409fbd2f82

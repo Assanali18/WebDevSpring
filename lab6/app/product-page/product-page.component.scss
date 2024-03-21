@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .product{
     .header{
         display: flex;
@@ -18,3 +19,25 @@
     width: 50%;
     padding-left: 27px;
 }
+=======
+.product{
+    .header{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    h2{
+        margin-bottom: .5rem;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.item{
+    width: 50%;
+    padding-left: 27px;
+}
+>>>>>>> 78668f55cf726fc0e7ee6bf74a94e0409fbd2f82

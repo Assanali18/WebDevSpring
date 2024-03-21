@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .gallery-image {
   max-width: 500px;
   max-height: 750px;
@@ -25,4 +26,33 @@ h2{
   display: flex;
   justify-content: end;
   align-items: center;
+=======
+.gallery-image {
+  max-width: 500px;
+  max-height: 750px;
+  padding-top: 30px;
+  margin: 0 auto;
+  
+  .slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      max-width: 100%; 
+      max-height: 100%; 
+      height: auto; 
+      width: auto;
+    }
+  }
+  
+}
+h2{
+  text-align: center;
+}
+
+.header{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+>>>>>>> 78668f55cf726fc0e7ee6bf74a94e0409fbd2f82
 }
